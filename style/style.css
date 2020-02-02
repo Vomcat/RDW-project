@@ -1,0 +1,331 @@
+:root {
+  --primary-color: rgba(7, 145, 76, 1);
+}
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.header {
+  max-width: 1206px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.logo__menu {
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+.nav__links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__links ul li {
+  display: block;
+  float: left;
+  padding: 30px 20px;
+  font-weight: 600;
+  color: rgb(58, 55, 55);
+  font-size: 16px;
+}
+
+.nav__links ul li:hover {
+  background: rgb(199, 194, 194);
+  transition: all 0.4s ease;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(58, 55, 55);
+  margin: 5px;
+}
+
+#main {
+  background: url("../images/obraz1.png") fixed no-repeat center center/cover;
+  width: 100%;
+}
+.main__container {
+  max-width: 1206px;
+  margin: auto;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__container--logo {
+  padding: 10px 10px;
+}
+.main__container--content {
+  padding: 60px 10px;
+  text-align: center;
+}
+.main__container--content p {
+  font-size: 4rem;
+  font-weight: 600;
+  color: ivory;
+}
+
+#about {
+  background-color: #fff;
+}
+.about__container {
+  max-width: 1206px;
+  margin: auto;
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about__container h1 {
+  color: rgb(66, 61, 61);
+  font-weight: 600;
+  padding: 20px 20px;
+}
+.about__container p {
+  color: rgb(66, 61, 61);
+  font-weight: 600;
+  padding: 20px 20px;
+}
+
+#offer {
+  background: url("../images/obraz3.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.offer__container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+
+.offer__container--list {
+  background-color: #fff;
+  width: 50%;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.offer__container--list ul {
+  list-style: inside;
+  color: rgb(121, 121, 121);
+  font-weight: bold;
+}
+
+.offer__container--text {
+  width: 50%;
+  padding: 5rem 10rem;
+  padding-left: 0;
+}
+.offer__container--text p {
+  font-weight: bold;
+  color: #ffff;
+}
+#contact {
+  background: url("../images/obraz2.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form__container {
+  max-width: 1206px;
+  margin: auto;
+  padding: 6rem 3rem;
+  line-height: 2.5rem;
+}
+.form__form {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+}
+.form__text p {
+  text-align: center;
+  color: #fff;
+  padding: 3rem;
+}
+.form__text h1 {
+  font-weight: bold;
+  line-height: 4rem;
+  text-align: center;
+  color: #fff;
+}
+.form__form--input {
+  padding: 2rem 0 1.5rem 0;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+
+.form__form--input input {
+  font-size: 14px;
+  padding: 25px 20.8% 25px 25px;
+  color: #8c8c8c;
+  font-family: "Now";
+  border: none;
+  width: 100%;
+}
+#form__form--btn {
+  display: block;
+  padding: 20px 20%;
+  background-color: rgb(7, 149, 62);
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+#form__form--btn:hover {
+  background-color: rgb(28, 173, 84);
+  transition: 0.5s;
+}
+#form__form--btn::before {
+  content: "*Agree terms";
+  display: block;
+  position: absolute;
+  bottom: -19px;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  right: 0;
+}
+.error {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  padding: 2px;
+  opacity: 1;
+  font-weight: 600;
+  color: red;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .nav__links {
+    position: absolute;
+    right: 0px;
+    top: 7.6vh;
+    background-color: #fff;
+    width: 40%;
+    transform: translateX(100%);
+  }
+
+  .nav__links ul li {
+    float: none;
+    text-align: center;
+  }
+  .burger {
+    display: block;
+    padding: 5px;
+  }
+
+  .main__container {
+    padding: 0.8rem;
+  }
+  .main__container--content p {
+    font-size: 2rem;
+  }
+  .about__container {
+    padding: 2rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .offer__container {
+    flex-direction: column;
+    line-height: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  .offer__container--text {
+    width: 100%;
+    padding: 3rem 0;
+  }
+  .offer__container--list {
+    width: 100%;
+  }
+  .form__container {
+    padding: 3rem 0.8rem;
+    line-height: 2rem;
+  }
+  .form__text h1 {
+    line-height: 2rem;
+  }
+  .form__text p {
+    padding: 3rem 0.8rem;
+  }
+  .form__form--input {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .offer__container--text {
+    padding: 4rem 2rem;
+  }
+  .offer__container {
+    width: 100%;
+    padding: 4rem 0rem;
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinks {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
