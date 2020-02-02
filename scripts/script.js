@@ -37,25 +37,14 @@ $(document).ready(function() {
   });
 });
 
-/* $(document).ready(function() {
-  $("#form").on("submit", function(e) {
-    e.preventDefault();
-
-    if ($("#mail").val().length == 0) {
-      $("#mail").after("<span class='error'>Mail is required</span>");
-    }
-
-    $(".error").fadeOut(3000, function() {
-      $(this).remove();
-    });
-  });
-}); */
 $(document).ready(function() {
   $(".burger ").on("click", function() {
     $(".nav__links").toggleClass("nav__active");
+    $(this).toggleClass("close");
   });
 
   $(".nav__links a ").on("click", function() {
     $(".nav__links").removeClass("nav__active");
+    $(".burger").removeClass("close");
   });
 });

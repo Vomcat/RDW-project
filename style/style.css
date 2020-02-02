@@ -2,7 +2,7 @@
   --primary-color: rgba(7, 145, 76, 1);
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -53,9 +53,10 @@ header {
   display: block;
   float: left;
   padding: 30px 20px;
-  font-weight: 600;
-  color: rgb(58, 55, 55);
-  font-size: 16px;
+}
+.nav__links a {
+  color: rgb(78, 78, 78);
+  font-weight: bold;
 }
 
 .nav__links ul li:hover {
@@ -93,7 +94,7 @@ header {
   text-align: center;
 }
 .main__container--content p {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   color: ivory;
 }
@@ -117,8 +118,9 @@ header {
 }
 .about__container p {
   color: rgb(66, 61, 61);
-  font-weight: 600;
+  font-size: 2rem;
   padding: 20px 20px;
+  line-height: 1.2;
 }
 
 #offer {
@@ -140,8 +142,8 @@ header {
 .offer__container--list {
   background-color: #fff;
   width: 50%;
-  padding: 2rem;
-  font-size: 1.5rem;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
 }
 .offer__container--list ul {
   list-style: inside;
@@ -165,7 +167,7 @@ header {
 }
 
 .form__container {
-  max-width: 1206px;
+  max-width: 906px;
   margin: auto;
   padding: 6rem 3rem;
   line-height: 2.5rem;
@@ -181,7 +183,8 @@ header {
 .form__text p {
   text-align: center;
   color: #fff;
-  padding: 3rem;
+  padding: 1rem;
+  font-size: 1.7rem;
 }
 .form__text h1 {
   font-weight: bold;
@@ -206,8 +209,8 @@ header {
 }
 #form__form--btn {
   display: block;
-  padding: 20px 20%;
-  background-color: rgb(7, 149, 62);
+  padding: 20px 15%;
+  background-color: rgb(77, 145, 37);
   border: none;
   font-size: 16px;
   color: #fff;
@@ -219,17 +222,17 @@ header {
   position: relative;
 }
 #form__form--btn:hover {
-  background-color: rgb(28, 173, 84);
+  background-color: rgb(103, 172, 62);
   transition: 0.5s;
 }
 #form__form--btn::before {
-  content: "*Agree terms";
+  content: "*agree with terms";
   display: block;
   position: absolute;
   bottom: -19px;
-  font-size: 12px;
-  letter-spacing: 0.1rem;
+  font-size: 11px;
   right: 0;
+  font-family: "Now";
 }
 .error {
   position: absolute;
@@ -238,8 +241,7 @@ header {
   background-color: transparent;
   padding: 2px;
   opacity: 1;
-  font-weight: 600;
-  color: red;
+  color: rgb(216, 34, 34);
   left: 0;
 }
 
@@ -253,7 +255,7 @@ header {
   .nav__links {
     position: absolute;
     right: 0px;
-    top: 7.6vh;
+    top: 69.6px;
     background-color: #fff;
     width: 40%;
     transform: translateX(100%);
@@ -269,7 +271,7 @@ header {
   }
 
   .main__container {
-    padding: 0.8rem;
+    padding: 5rem 0.8rem;
   }
   .main__container--content p {
     font-size: 2rem;
@@ -319,13 +321,13 @@ header {
   transform: translateX(0%);
 }
 
-@keyframes navLinks {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+.close .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.close .line2 {
+  opacity: 0;
+}
+.close .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
